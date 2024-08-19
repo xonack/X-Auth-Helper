@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "X Auth Helper",
   "version": "1.0",
-  "description": "Retrieves X key for logged in user",
+  "description": "Retrieves X key for logged in user. Requires cookies permission.",
   "permissions": ["cookies"],
   "host_permissions": ["*://x.com/*"],
   "incognito": "split",

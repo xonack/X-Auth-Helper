@@ -16,5 +16,10 @@ document.getElementById('get-key').addEventListener('click', () => {
 // Handles copying the key using the button
 document.getElementById('copy-key').addEventListener('click', () => {
 	navigator.clipboard.writeText(document.getElementById('key-output').value);
-})
+});
+
+// Opens APEX link in new tab
+document.getElementById('apex-link').addEventListener('click', () => {
+	chrome.tabs.create({ url: 'https://apexagents.ai' });
+});
   

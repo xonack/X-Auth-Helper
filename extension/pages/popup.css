@@ -32,3 +32,8 @@ button:hover {
 .output-container {
     height: 100vw;
 }
+
+#apex-link {
+    cursor: pointer;
+    text-decoration: underline;
+}

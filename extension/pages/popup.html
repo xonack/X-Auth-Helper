@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="popup.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>X Auth Helper</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <svg class="x-logo" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+      <h1>Auth Helper</h1>
     </div>
 
-    <div class="container">
-      <button id="get-key"><h4>Get key</h4></button>
+    <div class="button-group">
+      <button id="get-key" class="btn btn-primary">Get API Key</button>
     </div>
 
-    <div class="container output-container">
-      <textarea readonly id="key-output"></textarea>
+    <div class="output-section">
+      <textarea id="key-output" readonly placeholder="Click 'Get API Key' to retrieve your key..."></textarea>
     </div>
 
-    <div class="container">
-      <button id="copy-key"><h4>Copy key</h4></button>
+    <div class="button-group">
+      <button id="copy-key" class="btn btn-secondary">Copy to Clipboard</button>
     </div>
 
-    <div class="container">
-      <h5>Developed w/ 💙 by <span id="apex-link">APEX</span></h5>
+    <div class="footer">
+      <p>Built with 💙 by <span id="apex-link">APEX</span></p>
     </div>
-
-    <script src="popup.js"></script>
-  </body>
+  </div>
+  <script src="popup.js"></script>
+</body>
 </html>
